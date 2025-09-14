@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "title": "Zeno the Herophilean’s pulse definition and Galen's critique",
+    "author": "Galen, De differentiis pulsuum IV.8 (K VIII 736.6–741.4)",
+    "generatedFrom": "galen_diffpuls_iv8.xml",
+    "witnesses": []
+  },
+  "divs": [
+    {
+      "n": "Galen Diff.Puls. IV.8 (K. VIII.736.6-11)",
+      "type": "passage",
+      "html": "<p lang=\"grc\">Ἐπὶ δὲ τὸν ὑπὸ τοῦ <span class=\"persName\" data-ref=\"#zeno\">Ζήνωνος</span><span class=\"rs rs-school\" data-type=\"school\" data-key=\"Herophilean\">Ἡροφιλείων</span><span class=\"seg\"></span></p>\n        <p lang=\"grc\">οὗτος δὴ τὸν <span class=\"term term-physiology\" data-type=\"physiology\" data-key=\"pulse\">σφυγμόν</span> φησιν εἶναι τῶν <span class=\"rs rs-anatomy\" data-type=\"anatomy\" data-key=\"arterial-parts\">ἀρτηριωδῶν μερῶν</span> <span class=\"term term-physiology\" data-type=\"physiology\" data-key=\"mixed-activity\">μικτὴν ἐνέργειαν</span> ἐκ <span class=\"term term-pulsePhase\" data-type=\"pulsePhase\">συστολῆς</span> καὶ <span class=\"term term-pulsePhase\" data-type=\"pulsePhase\">διαστάσεως</span>, καθ’ ἣν ἐν ἅπασι τοῖς μέρεσι τὴν αὐτὴν <span class=\"term term-concept\" data-type=\"concept\" data-key=\"taxis\">τάξιν</span> ἠκολούθησεν, <span class=\"seg seg-differentia\" data-type=\"differentia\" data-ana=\"#time\">ἐάν τε ἐν τοῖς ἴσοις ἐάν τε ἐν τοῖς ἀνίσοις ἐκείνη συντελῆται χρόνοις</span></p>\n        <p lang=\"en\">Let us now turn to the definition given by Zeno, a man second to none among the Herophileans. He says that the pulse is a mixed activity of the arterial parts, composed of contraction and dilation, in accordance with which there is the same order present in all parts – whether this is carried out in equal or unequal intervals of time.</p>\n        ",
+      "commentaryHtml": "",
+      "apparatusHtml": ""
+    },
+    {
+      "n": "Galen Diff.Puls. IV.8 (K. VIII.738.8-14)",
+      "type": "passage",
+      "html": "<p lang=\"grc\">λέγειν δ’ οὕτως ἐτόλμησαν διὰ τὴν ὁμοιότητα τῆς σωματικῆς οὐσίας αὐτῶν. ὁμοιότατον γάρ ἐστι τὸ τῆς <span class=\"rs rs-anatomy\" data-type=\"anatomy\" data-key=\"heart\">καρδίας</span> σῶμα τῷ τῶν <span class=\"rs rs-anatomy\" data-type=\"anatomy\" data-key=\"skeletal-muscle\">σκληρῶν μυῶν</span>. καὶ μέντοι καὶ φαίνεται σαφῶς ἀμφοτέραις ταῖς <span class=\"rs rs-anatomy\" data-type=\"anatomy\" data-key=\"ventricle\">κοιλίαις</span> σφύζουσα, καὶ καθ’ ὃν ἔγκειται καιρὸν ἔτι τῷ ζώῳ καὶ <span class=\"seg seg-observation\" data-type=\"observation\">μετὰ τὴν ἐξαίρεσιν ἄχρι χρόνου τινός</span>. ἀλλὰ καὶ ὅτι τὸν <span class=\"term term-scope\" data-type=\"scope\" data-key=\"natural\">κατὰ φύσιν</span> μόνον ὥρισται σφυγμὸν ὁ <span class=\"persName\" data-ref=\"#zeno\">Ζήνων</span>, καὶ κατὰ τοῦτο εἰκότως ἐγκέκληται</p>\n        <p lang=\"en\">They dared to speak in this way because of the similarity in their bodily substance. For the substance of the heart is most similar to that of the firm muscles. And indeed, it is clearly seen to pulsate in both ventricles, and to do so for as long as the appropriate time remains in the animal – even after its removal, for a certain period. Moreover, Zeno defined only the pulse that is in accordance with nature, and for this reason, he has rightly been praised.</p>\n      ",
+      "commentaryHtml": "",
+      "apparatusHtml": ""
+    },
+    {
+      "n": "Galen Diff.Puls. IV.8 (K.VIII.738.14-739.1)",
+      "type": "passage",
+      "html": "<p lang=\"grc\">τὸ γὰρ ἐν ἅπασι τοῖς μέρεσι τὴν αὐτὴν ὑπάρχειν τάξιν τῆς κινήσεως τῶν ἀρτηριῶν, ἐπὶ μὲν τῶν κατὰ φύσιν ἐχόντων ἀληθὲς, ἐπὶ δὲ τῶν παρὰ φύσιν ἐνίοτε ψεῦδος. ἐγκαλεῖ δ’ <span class=\"persName\" data-ref=\"#aristoxenus\">Ἀριστόξενος</span> εἰκότως τῷ <span class=\"persName\" data-ref=\"#zeno\">Ζήνωνι</span>, καθάπερ καὶ ἄλλοις πολλοῖς, τῆς περιττῆς προσθήκης ἐν τῷ φάναι, <span class=\"seg seg-differentia\" data-type=\"differentia\" data-ana=\"#time\">ἐάν τε ἐν τοῖς ἴσοις ἐάν τε ἐν τοῖς ἀνίσοις ἐκείνη συντελῆται χρόνοις</span></p>\n        <p lang=\"en\">For the claim that the same order of arterial movement is present in all parts is true in those who are in accordance with nature, but in those who are contrary to nature, it is sometimes false. And Aristoxenus rightly criticizes Zeno – as he does many others – for the superfluous addition in saying: ‘whether this occurs in equal or in unequal times’.</p>\n      ",
+      "commentaryHtml": "",
+      "apparatusHtml": ""
+    },
+    {
+      "n": "Galen Diff.Puls. IV.8 (K.VIII.740.1-12)",
+      "type": "passage",
+      "html": "<p lang=\"grc\">τὸ γὰρ κοινὸν ἁπάντων σφυγμῶν προσήκει δηλοῦσθαι κατὰ τὸν ὅρον, ὅπερ ἐστὶ καθ’ ὃ σφυγμοὶ νοοῦνταί τε καὶ λέγονται, οὐ καθ’ ὃ τοιοίδε τινὲς σφυγμοί. ὡς ἐάν γέ τινος ἐφάψηται διαφορᾶς ὁ κατὰ τὸν ὅρον λόγος, ὑποκάτω τοῦ προκειμένου πράγματος οὔσης, ἀφορμὴν παρέξει τοῖς ἐγκαλεῖν βουλομένοις ὡς κακῶς τῶν ἄλλων παραλελειμμένων. ὡς γὰρ ὁ <span class=\"persName\" data-ref=\"#zeno\">Ζήνων</span> προσέθηκεν, <span class=\"seg seg-differentia\" data-type=\"differentia\" data-ana=\"#time\">ἐάν τε ἐν τοῖς ἴσοις ἐάν τ’ ἐν τοῖς ἀνίσοις χρόνοις συντελῆται</span>, τὴν κατὰ <span class=\"seg seg-differentia\" data-type=\"differentia\" data-ana=\"#mag\">χρόνον</span> ἔν γε τοῖς σφυγμοῖς διαφορὰν ἐνδεικνύμενος, οὕτως ἄλλος προσθήσει τὴν κατὰ <span class=\"seg seg-differentia\" data-type=\"differentia\" data-ana=\"#mag\">μέγεθος</span>, εἶτ’ ἄλλος τὴν κατὰ <span class=\"seg seg-differentia\" data-type=\"differentia\" data-ana=\"#force\">σφοδρότητα</span>, καὶ ἄλλος μέν γε τὴν κατὰ <span class=\"seg seg-differentia\" data-type=\"differentia\" data-ana=\"#dens\">πυκνότητα</span>, τὴν κατ’ <span class=\"seg seg-differentia\" data-type=\"differentia\" data-ana=\"#num\">ἀριθμὸν</span> δ’ ἄλλος, ἁπάσας δὲ τὰς ὑπολοίπους διαφορὰς ἄλλος τις καὶ ἄλλος.</p>\n        <p lang=\"en\">For the common feature of all pulses ought to be expressed in the definition – that is, the feature by which pulses are both conceived and spoken of, not by which certain particular types of pulse are such. For if the account given in the definition touches on any specific difference lying below the general concept of the matter at hand, it will offer an opportunity to those wishing to criticize, as if other aspects have been improperly omitted. Just as Zeno added, ‘whether this occurs in equal or unequal times’, thereby introducing the temporal variation found in pulses, so too another will add the difference based on magnitude, another on intensity, another on frequency, and yet another on number – until finally someone or other will add every remaining difference.</p>\n      ",
+      "commentaryHtml": "",
+      "apparatusHtml": ""
+    },
+    {
+      "n": "Galen Diff.Puls. IV.8 (K. VIII.740.12-741.1)",
+      "type": "passage",
+      "html": "<p lang=\"grc\">ταῦτα μὲν οὖν εἰκότως ἐμέμψαντο τῷ τοῦ Ζήνωνος ὅρῳ, πλεονασθέντι περιττῶς. εἶχον δ’ ἐγκαλεῖν, εἴπερ ἐβούλοντο, καὶ τὰ παρὰ τοῖς <span class=\"rs rs-profession\" data-type=\"profession\" data-key=\"dialecticians\">διαλεκτικοῖς</span> εἰρημένα περὶ τῶν πλεοναζόντων ὅρων κατὰ τὴν λέξιν. ἐπιδεικνύουσι γὰρ οἱ ἄνδρες ἐκεῖνοι τὴν τῆς λέξεως αὔξησιν, μείωσιν ἐργαζομένην τοῦ κατὰ τὸν ὁρισμὸν πράγματος, καθάπερ εἰ καὶ τὸν ἄνθρωπόν τις εἴποι πεζὸν δίπουν ζῶον γεωμετροῦν. οἱ γὰρ μὴ γεωμετροῦντες οὐκ ἔσονται ἄνθρωποι.</p>\n        <p lang=\"en\">These criticisms, then, were rightly made against Zeno’s definition, as it was needlessly verbose. They also had grounds for censure, if they wished, based on what the dialecticians have said about redundant definitions in regard to wording. For those men demonstrate that the increase in words leads to a diminution of the concept defined – just as if someone were to define a human being as ‘a terrestrial, two-footed living creature that does geometry’. For those who do not practice geometry would then not be human beings.</p>\n      ",
+      "commentaryHtml": "",
+      "apparatusHtml": ""
+    },
+    {
+      "n": "Galen Diff.Puls. IV.8 (K. VIII.741.1-4)",
+      "type": "passage",
+      "html": "<p lang=\"grc\">προδήλου γεγονυίας ἤδη καὶ τῆς κατὰ τοῦτον τὸν ὅρον ἀντιλογίας αὐτῶν, εἰς ὅσον ἐκτείνεσθαι δύναται, μεταβῶμεν ἀπὸ τοῦ <span class=\"persName\" data-ref=\"#zeno\">Ζήνωνος</span> ἐπὶ τὸν <span class=\"persName\" data-ref=\"#chrysermus\">Χρύσερμον</span>, ὁριζόμενον οὑτωσὶ τὸν σφυγμόν·</p>\n        <p lang=\"en\">Now that their objection to this definition has become evident – so far as it can be extended – let us move on from Zeno to Chrysermus, who defines the pulse in the following way:</p>\n      ",
+      "commentaryHtml": "",
+      "apparatusHtml": ""
+    }
+  ]
+}

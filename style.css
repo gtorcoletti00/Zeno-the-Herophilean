@@ -1,0 +1,199 @@
+:root {
+  --measure: 68ch;
+  --maxw: 960px;
+  --sidebar-w: 330px;
+  --gap: 28px;
+  --radius: 18px;
+  --shadow: 0 10px 30px rgba(0,0,0,.06);
+  --shadow-soft: 0 4px 16px rgba(0,0,0,.05);
+
+  --bg: #f6f4f1;
+  --panel: #ffffff;
+  --text: #14110f;
+  --muted: #666;
+  --border: #e5e1dc;
+  --link: #0b57d0;
+  --accent: #4b433a;
+
+  --chip-term: rgba(76,175,80,.16);
+  --chip-pers: rgba(255,193,7,.22);
+  --chip-rs:   rgba(33,150,243,.14);
+  --chip-seg:  rgba(156,39,176,.14);
+
+  --container-pad: clamp(24px, 6vw, 64px);
+  --header-h: 120px;  /* corrected by JS */
+  --wrap: calc(var(--maxw) + var(--sidebar-w) + var(--gap));
+}
+
+[data-theme="dark"] {
+  --bg: #0f1012;
+  --panel: #17181b;
+  --text: #eae7e2;
+  --muted: #a3a3a8;
+  --border: #2a2c31;
+  --link: #8ab4ff;
+  --accent: #e6ddcf;
+
+  --chip-term: rgba(76,175,80,.26);
+  --chip-pers: rgba(255,193,7,.32);
+  --chip-rs:   rgba(33,150,243,.27);
+  --chip-seg:  rgba(156,39,176,.27);
+
+  --shadow: 0 10px 30px rgba(0,0,0,.3);
+  --shadow-soft: 0 4px 16px rgba(0,0,0,.25);
+}
+
+*{box-sizing:border-box}
+html{scroll-padding-top:calc(var(--header-h) + 16px)}
+body{margin:0;color:var(--text);background:var(--bg);font-family:"EB Garamond",ui-serif,Georgia;line-height:1.6}
+
+/* shared widths */
+.site-header,.page-intro,.toc,.legend,.page-layout{
+  max-width: 1300px;            /* limita la larghezza dell’intro */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* fixed header */
+.site-header{
+  position:fixed; top:0; left:50%; transform:translateX(-50%);
+  z-index:100;
+  width:min(100%, calc(var(--wrap) + 2*var(--container-pad)));
+  background:var(--panel);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:.8rem 1rem;
+  margin-top:.4rem;
+  box-shadow:var(--shadow-soft);
+}
+body{padding-top:var(--header-h)}
+.brand{display:flex;justify-content:space-between;align-items:center;gap:1rem}
+h1{margin:0;font-size:clamp(1.6rem,1.2rem + 2vw,2.6rem)}
+.muted{color:var(--muted)}
+.actions button{cursor:pointer;border:1px solid var(--border);background:var(--panel);padding:.35rem .6rem;border-radius:10px}
+.actions button:hover{background:color-mix(in oklab, var(--panel), #000 3%)}
+
+/* intro */
+.page-intro{
+  margin:.2rem auto 1rem;
+  padding:1rem 1.1rem;
+  background:color-mix(in oklab, var(--panel), #000 3%);
+  border:1px solid var(--border);
+  border-radius:12px;
+  color:var(--muted);
+}
+
+/* toc */
+.toc{
+  margin:0 auto .9rem; padding:.6rem .8rem;
+  display:flex; flex-wrap:wrap; gap:.5rem .6rem;
+  background:var(--panel); border:1px solid var(--border);
+  border-radius:14px; box-shadow:var(--shadow-soft);
+}
+.toc a{color:var(--link);text-decoration:none;padding:.35rem .6rem;border-radius:10px;border:1px solid color-mix(in oklab, var(--link) 26%, var(--border));background:color-mix(in oklab, var(--panel), var(--link) 3%)}
+.toc a.active{border-color:var(--link);background:color-mix(in oklab, var(--panel), var(--link) 10%)}
+
+.legend{display:flex;gap:.6rem 1rem;flex-wrap:wrap;list-style:none;margin:.4rem auto 0;padding:0}
+.legend .chip{display:inline-block;width:.9rem;height:.9rem;border-radius:3px;border:1px solid var(--border);vertical-align:middle;margin-right:.35rem}
+.chip-term{background:var(--chip-term)} .chip-persName{background:var(--chip-pers)} .chip-rs{background:var(--chip-rs)} .chip-seg{background:var(--chip-seg)}
+
+/* layout grid */
+.page-layout{display:grid;grid-template-columns:minmax(0,1fr) var(--sidebar-w);gap:var(--gap);align-items:start;margin:0 auto 2rem}
+.page-layout .main-column #edition{width:100%;margin:0;padding:0}
+
+/* SECTION CARD — big white block */
+#edition section{
+  background:var(--panel);
+  border:1px solid color-mix(in oklab, var(--border), #000 10%);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  margin:0 0 1.2rem;
+  overflow:hidden;
+}
+/* inner header band */
+#edition section .sec-head{
+  background:color-mix(in oklab, var(--panel), #000 2%);
+  padding:.8rem 1.2rem .6rem;
+  border-bottom:1px solid var(--border);
+}
+#edition section .sec-title{margin:0;color:var(--accent);font-variant-caps:small-caps;letter-spacing:.6px}
+
+#edition section .div-html{
+  padding:1rem 1.2rem 1.2rem;
+}
+#edition p{margin:.3rem 0;max-width:var(--measure)}
+
+/* two-column text */
+.bilingual{display:block}
+.bi-row.bi-two{display:grid;grid-template-columns:1fr 1fr;gap:1rem 1.25rem;align-items:start}
+.bi-col{min-width:0}
+.bi-left p,.bi-right p{margin:.32rem 0}
+.bi-left{padding-right:.25rem}
+.bi-right{padding-left:.25rem}
+
+/* TEI chips */
+span.persName{background:var(--chip-pers);padding:0 .15em;border-radius:.25em}
+span.term{background:var(--chip-term);padding:0 .15em;border-radius:.25em}
+span.rs{background:var(--chip-rs);padding:0 .15em;border-radius:.25em}
+span.seg{background:var(--chip-seg);padding:0 .15em;border-radius:.25em}
+
+/* sidebar */
+.specimen-sidebar{position:sticky;top:calc(var(--header-h) + 8px);align-self:start}
+#specimen{position:static !important;width:auto;max-width:100%}
+.specimen-card{background:var(--panel);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow-soft);padding:.6rem .75rem}
+.specimen-head{font-size:.95rem;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;margin-bottom:.35rem}
+.sig{display:grid;grid-template-columns:auto 1fr;gap:.25rem .5rem;margin:.25rem 0}
+.sigla{font-variant:small-caps}
+.expansion{color:var(--muted)}
+
+@media (max-width:1100px){
+  .page-layout{grid-template-columns:1fr}
+  .specimen-sidebar{position:static}
+}
+.page-intro {
+  max-width: 1300px;            /* limita la larghezza dell’intro */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-inline: calc(var(--container-pad) + 16px);
+}
+/* === Legend (term, persName, rs, seg) come "card" === */
+.legend{
+  /* già avevamo la stessa larghezza degli altri blocchi */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6rem 1rem;
+
+  /* aspetto card */
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+
+  /* respiro e distacco dagli altri elementi */
+  padding: .6rem .8rem;
+  margin: .8rem auto 1rem;
+
+  /* se è un <ul>, evito i pallini */
+  list-style: none;
+  padding-left: .8rem;   /* se vuoi più rientro, aumenta */
+}
+
+.legend > li{
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* i quadratini colorati rimangono come prima */
+.legend .chip{
+  width: .9rem;
+  height: .9rem;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+  margin-right: .35rem; /* piccolo spazio prima dell’etichetta */
+}

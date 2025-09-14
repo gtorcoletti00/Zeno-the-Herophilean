@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Digital Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+  <!-- Intro under the title -->
+  <div class="page-intro">
+    <p>
+      This interface was created as part of the summer school
+      <em>LLMs for DH Research</em> (Cologne, 8–11 September 2025). It is a proof-of-concept
+      built entirely by AI—from converting TEI-XML to JSON to assembling the front-end.
+    </p>
+    <p>
+      The page is a single-page app composed of three files (<code>index.html</code>,
+      <code>style.css</code>, <code>app.js</code>). It displays the Greek text with TEI
+      semantic highlights, a facing English translation, navigation by passages, a side
+      panel with witness sigla, a light/dark theme toggle, and—when available—expandable
+      sections for commentary and critical apparatus.
+    </p>
+  </div>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <div>
+        <h1 id="work-title">Zeno the Herophileans’s pulse definition and Galen's critique</h1>
+        <div class="muted" id="work-author">Galen</div>
+      </div>
+      <div class="actions">
+        <button id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌓</button>
+      </div>
+    </div>
+  </header>
+
+
+
+  <!-- Color legend -->
+  <ul class="legend">
+    <li><span class="chip chip-term"></span> term</li>
+    <li><span class="chip chip-persName"></span> persName</li>
+    <li><span class="chip chip-rs"></span> rs</li>
+    <li><span class="chip chip-seg"></span> seg</li>
+  </ul>
+
+  <!-- TOC -->
+  <nav id="toc" class="toc"></nav>
+
+  <!-- === Two-column structural layout (main + sidebar) === -->
+  <div id="pageLayout" class="page-layout">
+    <div class="main-column">
+      <div id="edition"></div>
+    </div>
+
+    <!-- Sidebar sticky for witness sigla -->
+    <aside id="specimenSidebar" class="specimen-sidebar">
+      <div id="specimen"></div>
+    </aside>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
