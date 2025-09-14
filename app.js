@@ -148,9 +148,9 @@ function renderSpecimen(payload) {
   const wits = (payload.meta && Array.isArray(payload.meta.witnesses) && payload.meta.witnesses.length)
     ? payload.meta.witnesses
     : [
-        {id: "A",  text: "Codex A (fict.), saec. XII"},
-        {id: "B",  text: "Codex B (fict.), saec. XIII"},
-        {id: "C",  text: "Codex C (fict.), saec. XIV"},
+        {id: "A",  text: "Codex Vat. gr. 1504 (fict.), saec. XII"},
+        {id: "B",  text: "Codex Aesinas 34.16 (fict.), saec. XIII"},
+        {id: "C",  text: "Codex Ierosolimitanus 74 (fict.), saec. XIV"},
         {id: "AI", text: "Aulus Intellex (ed.)"}
       ];
 
